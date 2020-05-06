@@ -37,5 +37,8 @@ class ViewController: UIViewController {
         }, completion: nil)
     }
     
+    @IBAction func alertTapped(_ sender: Any) {
+        CustomAlertView.instance.showAlert(type: .success, title: "Success change password", message: "Your password for this account already changed", buttonLabel: "Okay, got it", parent: self)
+    }
 }
 

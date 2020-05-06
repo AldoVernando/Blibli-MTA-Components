@@ -23,7 +23,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Z2N-c5-K11" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9xp-ci-drP"/>
                             <constraint firstItem="Z2N-c5-K11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-500" id="LTP-wa-r6H"/>
@@ -35,6 +35,11 @@
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="DgL-zH-IHG">
                             <connections>
                                 <action selector="menuTapped:" destination="BYZ-38-t0r" id="w2y-lI-d4l"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="bell" catalog="system" id="CjO-vo-Oit">
+                            <connections>
+                                <action selector="alertTapped:" destination="BYZ-38-t0r" id="39V-13-uhc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -67,6 +72,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
     </resources>
 </document>

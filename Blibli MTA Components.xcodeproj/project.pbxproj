@@ -23,6 +23,8 @@
 		2405F12C24625D89008442A1 /* MenuContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F12B24625D89008442A1 /* MenuContainerView.swift */; };
 		2405F12E24626A88008442A1 /* BottomMenuContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F12D24626A88008442A1 /* BottomMenuContainerView.swift */; };
 		2405F13124627225008442A1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F13024627225008442A1 /* MenuItem.swift */; };
+		2405F1342462A575008442A1 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2405F1332462A575008442A1 /* CustomAlertView.xib */; };
+		2405F1362462AAD9008442A1 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F1352462AAD9008442A1 /* CustomAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		2405F12B24625D89008442A1 /* MenuContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContainerView.swift; sourceTree = "<group>"; };
 		2405F12D24626A88008442A1 /* BottomMenuContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuContainerView.swift; sourceTree = "<group>"; };
 		2405F13024627225008442A1 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		2405F1332462A575008442A1 /* CustomAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
+		2405F1352462AAD9008442A1 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		2405F0E924622E0F008442A1 /* Blibli MTA Components */ = {
 			isa = PBXGroup;
 			children = (
+				2405F1322462A53D008442A1 /* Custom Alert */,
 				2405F108246234BC008442A1 /* Hamburger Menu */,
 				2405F0EA24622E0F008442A1 /* AppDelegate.swift */,
 				2405F0EC24622E0F008442A1 /* SceneDelegate.swift */,
@@ -119,6 +124,15 @@
 				2405F13024627225008442A1 /* MenuItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2405F1322462A53D008442A1 /* Custom Alert */ = {
+			isa = PBXGroup;
+			children = (
+				2405F1332462A575008442A1 /* CustomAlertView.xib */,
+				2405F1352462AAD9008442A1 /* CustomAlertView.swift */,
+			);
+			path = "Custom Alert";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,7 @@
 			files = (
 				2405F0F724622E12008442A1 /* LaunchScreen.storyboard in Resources */,
 				2405F12A24625D3E008442A1 /* MenuContainerView.xib in Resources */,
+				2405F1342462A575008442A1 /* CustomAlertView.xib in Resources */,
 				2405F0F424622E12008442A1 /* Assets.xcassets in Resources */,
 				2405F1162462395A008442A1 /* MenuItemTableViewCell.xib in Resources */,
 				2405F12224624DE2008442A1 /* BaseMenuView.xib in Resources */,
@@ -196,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2405F1362462AAD9008442A1 /* CustomAlertView.swift in Sources */,
 				2405F12E24626A88008442A1 /* BottomMenuContainerView.swift in Sources */,
 				2405F12824625A91008442A1 /* ProfileView.swift in Sources */,
 				2405F12424624EFC008442A1 /* BaseMenuView.swift in Sources */,

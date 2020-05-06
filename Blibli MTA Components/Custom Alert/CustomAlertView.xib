@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertView" customModule="Blibli_MTA_Components" customModuleProvider="target">
+            <connections>
+                <outlet property="alertBtn" destination="Sw7-19-ve5" id="pL3-z1-Ulz"/>
+                <outlet property="alertImage" destination="5ul-g8-mJw" id="MQG-rv-nRV"/>
+                <outlet property="alertMessage" destination="68N-Av-ueh" id="vzU-VF-jVz"/>
+                <outlet property="alertTitle" destination="Zlp-NR-KNc" id="jit-Wl-z0L"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="VfR-QJ-nji"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="220"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5ul-g8-mJw">
+                    <rect key="frame" x="20" y="30.5" width="40" height="39"/>
+                    <color key="backgroundColor" red="0.37384992379209481" green="0.98219384517766495" blue="0.25015144599548078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Rnp-6p-sez"/>
+                        <constraint firstAttribute="width" constant="40" id="h7T-OH-004"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success change password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlp-NR-KNc">
+                    <rect key="frame" x="20" y="90" width="310" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert message" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68N-Av-ueh">
+                    <rect key="frame" x="20" y="124" width="310" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw7-19-ve5">
+                    <rect key="frame" x="20" y="152" width="310" height="38"/>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                    <state key="normal" title="Okay">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Sw7-19-ve5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="LVh-bk-aD2"/>
+                <constraint firstItem="5ul-g8-mJw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="PsM-1o-iu2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sw7-19-ve5" secondAttribute="trailing" constant="20" id="U9h-0X-nLD"/>
+                <constraint firstItem="Zlp-NR-KNc" firstAttribute="top" secondItem="5ul-g8-mJw" secondAttribute="bottom" constant="20" id="WHZ-9d-2VF"/>
+                <constraint firstItem="68N-Av-ueh" firstAttribute="top" secondItem="Zlp-NR-KNc" secondAttribute="bottom" constant="10" id="bqh-yR-WDM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Sw7-19-ve5" secondAttribute="bottom" constant="30" id="dLp-Zn-c5d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zlp-NR-KNc" secondAttribute="trailing" constant="20" id="kLC-9j-vo9"/>
+                <constraint firstItem="68N-Av-ueh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="l7A-iE-QPC"/>
+                <constraint firstItem="Zlp-NR-KNc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="tOY-uS-grS"/>
+                <constraint firstItem="5ul-g8-mJw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="yTB-Y5-pIl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="68N-Av-ueh" secondAttribute="trailing" constant="20" id="zNG-a0-Z4J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139.13043478260872" y="94.419642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

@@ -30,7 +30,7 @@ class BaseMenuView: UIView {
         addSubview(contentView)
         
         contentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 50, height: stackView.frame.height + 60)
-        contentView.roundCorners(corners: [.topRight, .bottomRight], radius: 10)
+        contentView.roundCorners(corners: [.topRight, .bottomRight], radius: 5)
         
     }
     
