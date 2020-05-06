@@ -13,6 +13,16 @@
 		2405F0F224622E0F008442A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2405F0F024622E0F008442A1 /* Main.storyboard */; };
 		2405F0F424622E12008442A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2405F0F324622E12008442A1 /* Assets.xcassets */; };
 		2405F0F724622E12008442A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2405F0F524622E12008442A1 /* LaunchScreen.storyboard */; };
+		2405F1152462395A008442A1 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F1132462395A008442A1 /* MenuItemTableViewCell.swift */; };
+		2405F1162462395A008442A1 /* MenuItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2405F1142462395A008442A1 /* MenuItemTableViewCell.xib */; };
+		2405F12224624DE2008442A1 /* BaseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2405F12124624DE2008442A1 /* BaseMenuView.xib */; };
+		2405F12424624EFC008442A1 /* BaseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F12324624EFC008442A1 /* BaseMenuView.swift */; };
+		2405F12624625948008442A1 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2405F12524625948008442A1 /* ProfileView.xib */; };
+		2405F12824625A91008442A1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F12724625A91008442A1 /* ProfileView.swift */; };
+		2405F12A24625D3E008442A1 /* MenuContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2405F12924625D3E008442A1 /* MenuContainerView.xib */; };
+		2405F12C24625D89008442A1 /* MenuContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F12B24625D89008442A1 /* MenuContainerView.swift */; };
+		2405F12E24626A88008442A1 /* BottomMenuContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F12D24626A88008442A1 /* BottomMenuContainerView.swift */; };
+		2405F13124627225008442A1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F13024627225008442A1 /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		2405F0F324622E12008442A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2405F0F624622E12008442A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2405F0F824622E12008442A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2405F1132462395A008442A1 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		2405F1142462395A008442A1 /* MenuItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemTableViewCell.xib; sourceTree = "<group>"; };
+		2405F12124624DE2008442A1 /* BaseMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseMenuView.xib; sourceTree = "<group>"; };
+		2405F12324624EFC008442A1 /* BaseMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMenuView.swift; sourceTree = "<group>"; };
+		2405F12524625948008442A1 /* ProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		2405F12724625A91008442A1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2405F12924625D3E008442A1 /* MenuContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuContainerView.xib; sourceTree = "<group>"; };
+		2405F12B24625D89008442A1 /* MenuContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContainerView.swift; sourceTree = "<group>"; };
+		2405F12D24626A88008442A1 /* BottomMenuContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuContainerView.swift; sourceTree = "<group>"; };
+		2405F13024627225008442A1 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 		2405F0E924622E0F008442A1 /* Blibli MTA Components */ = {
 			isa = PBXGroup;
 			children = (
+				2405F108246234BC008442A1 /* Hamburger Menu */,
 				2405F0EA24622E0F008442A1 /* AppDelegate.swift */,
 				2405F0EC24622E0F008442A1 /* SceneDelegate.swift */,
 				2405F0EE24622E0F008442A1 /* ViewController.swift */,
@@ -65,6 +86,39 @@
 				2405F0F824622E12008442A1 /* Info.plist */,
 			);
 			path = "Blibli MTA Components";
+			sourceTree = "<group>";
+		};
+		2405F108246234BC008442A1 /* Hamburger Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2405F12124624DE2008442A1 /* BaseMenuView.xib */,
+				2405F12324624EFC008442A1 /* BaseMenuView.swift */,
+				2405F12F24627216008442A1 /* Model */,
+				2405F10D246235E6008442A1 /* Segments */,
+			);
+			path = "Hamburger Menu";
+			sourceTree = "<group>";
+		};
+		2405F10D246235E6008442A1 /* Segments */ = {
+			isa = PBXGroup;
+			children = (
+				2405F12724625A91008442A1 /* ProfileView.swift */,
+				2405F12524625948008442A1 /* ProfileView.xib */,
+				2405F1132462395A008442A1 /* MenuItemTableViewCell.swift */,
+				2405F1142462395A008442A1 /* MenuItemTableViewCell.xib */,
+				2405F12924625D3E008442A1 /* MenuContainerView.xib */,
+				2405F12B24625D89008442A1 /* MenuContainerView.swift */,
+				2405F12D24626A88008442A1 /* BottomMenuContainerView.swift */,
+			);
+			path = Segments;
+			sourceTree = "<group>";
+		};
+		2405F12F24627216008442A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2405F13024627225008442A1 /* MenuItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2405F0F724622E12008442A1 /* LaunchScreen.storyboard in Resources */,
+				2405F12A24625D3E008442A1 /* MenuContainerView.xib in Resources */,
 				2405F0F424622E12008442A1 /* Assets.xcassets in Resources */,
+				2405F1162462395A008442A1 /* MenuItemTableViewCell.xib in Resources */,
+				2405F12224624DE2008442A1 /* BaseMenuView.xib in Resources */,
+				2405F12624625948008442A1 /* ProfileView.xib in Resources */,
 				2405F0F224622E0F008442A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2405F12E24626A88008442A1 /* BottomMenuContainerView.swift in Sources */,
+				2405F12824625A91008442A1 /* ProfileView.swift in Sources */,
+				2405F12424624EFC008442A1 /* BaseMenuView.swift in Sources */,
 				2405F0EF24622E0F008442A1 /* ViewController.swift in Sources */,
 				2405F0EB24622E0F008442A1 /* AppDelegate.swift in Sources */,
+				2405F1152462395A008442A1 /* MenuItemTableViewCell.swift in Sources */,
+				2405F13124627225008442A1 /* MenuItem.swift in Sources */,
+				2405F12C24625D89008442A1 /* MenuContainerView.swift in Sources */,
 				2405F0ED24622E0F008442A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR4V7R375P;
 				INFOPLIST_FILE = "Blibli MTA Components/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aldovernando.Blibli-MTA-Components";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR4V7R375P;
 				INFOPLIST_FILE = "Blibli MTA Components/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aldovernando.Blibli-MTA-Components";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
