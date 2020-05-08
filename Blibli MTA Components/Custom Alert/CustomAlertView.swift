@@ -28,6 +28,10 @@ class CustomAlertView: UIView {
         setUp()
     }
     
+    @IBAction func alertBtnTapped(_ sender: UIButton) {
+        animateOut()
+    }
+    
     func setUp() {
         Bundle.main.loadNibNamed("CustomAlertView", owner: self, options: nil)
        
@@ -68,6 +72,26 @@ class CustomAlertView: UIView {
         UIApplication.shared.keyWindow?.addSubview(contentView)
         
         contentView.center = parent.view.center
+        animateIn()
+    }
+    
+    func animateIn() {
+        contentView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        contentView.alpha = 0
+        
+        UIView.animate(withDuration: 0.3) {
+            self.contentView.alpha = 1
+            self.contentView.transform = CGAffineTransform.identity
+        }
+    }
+    
+    func animateOut() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.contentView.alpha = 0
+            self.contentView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+        }) { (_) in
+            self.contentView.removeFromSuperview()
+        }
     }
     
 }
