@@ -25,6 +25,9 @@
 		2405F13124627225008442A1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F13024627225008442A1 /* MenuItem.swift */; };
 		2405F1342462A575008442A1 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2405F1332462A575008442A1 /* CustomAlertView.xib */; };
 		2405F1362462AAD9008442A1 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F1352462AAD9008442A1 /* CustomAlertView.swift */; };
+		24FC4794246505D80017FAEE /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC4792246505D80017FAEE /* BottomViewController.swift */; };
+		24FC4795246505D80017FAEE /* BottomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC4793246505D80017FAEE /* BottomViewController.xib */; };
+		24FC4797246547E30017FAEE /* BottomCardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC4796246547E30017FAEE /* BottomCardModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		2405F13024627225008442A1 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		2405F1332462A575008442A1 /* CustomAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
 		2405F1352462AAD9008442A1 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		24FC4792246505D80017FAEE /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
+		24FC4793246505D80017FAEE /* BottomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomViewController.xib; sourceTree = "<group>"; };
+		24FC4796246547E30017FAEE /* BottomCardModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCardModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		2405F0E924622E0F008442A1 /* Blibli MTA Components */ = {
 			isa = PBXGroup;
 			children = (
+				24FC4791246505130017FAEE /* Bottom Card Modal */,
 				2405F1322462A53D008442A1 /* Custom Alert */,
 				2405F108246234BC008442A1 /* Hamburger Menu */,
 				2405F0EA24622E0F008442A1 /* AppDelegate.swift */,
@@ -133,6 +140,16 @@
 				2405F1352462AAD9008442A1 /* CustomAlertView.swift */,
 			);
 			path = "Custom Alert";
+			sourceTree = "<group>";
+		};
+		24FC4791246505130017FAEE /* Bottom Card Modal */ = {
+			isa = PBXGroup;
+			children = (
+				24FC4792246505D80017FAEE /* BottomViewController.swift */,
+				24FC4793246505D80017FAEE /* BottomViewController.xib */,
+				24FC4796246547E30017FAEE /* BottomCardModal.swift */,
+			);
+			path = "Bottom Card Modal";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +218,7 @@
 				2405F12224624DE2008442A1 /* BaseMenuView.xib in Resources */,
 				2405F12624625948008442A1 /* ProfileView.xib in Resources */,
 				2405F0F224622E0F008442A1 /* Main.storyboard in Resources */,
+				24FC4795246505D80017FAEE /* BottomViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +234,10 @@
 				2405F12824625A91008442A1 /* ProfileView.swift in Sources */,
 				2405F12424624EFC008442A1 /* BaseMenuView.swift in Sources */,
 				2405F0EF24622E0F008442A1 /* ViewController.swift in Sources */,
+				24FC4794246505D80017FAEE /* BottomViewController.swift in Sources */,
 				2405F0EB24622E0F008442A1 /* AppDelegate.swift in Sources */,
 				2405F1152462395A008442A1 /* MenuItemTableViewCell.swift in Sources */,
+				24FC4797246547E30017FAEE /* BottomCardModal.swift in Sources */,
 				2405F13124627225008442A1 /* MenuItem.swift in Sources */,
 				2405F12C24625D89008442A1 /* MenuContainerView.swift in Sources */,
 				2405F0ED24622E0F008442A1 /* SceneDelegate.swift in Sources */,
