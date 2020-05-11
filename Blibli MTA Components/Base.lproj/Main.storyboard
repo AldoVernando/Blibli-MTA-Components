@@ -46,11 +46,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="dR4-er-twi">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="DgL-zH-IHG">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="menuTapped:" destination="BYZ-38-t0r" id="w2y-lI-d4l"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="bell" catalog="system" id="CjO-vo-Oit">
+                        <barButtonItem key="rightBarButtonItem" image="bell.fill" catalog="system" id="CjO-vo-Oit">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="alertTapped:" destination="BYZ-38-t0r" id="39V-13-uhc"/>
                             </connections>
@@ -73,6 +75,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tI8-lo-9Iu">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -85,7 +88,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="bell.fill" catalog="system" width="128" height="124"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
     </resources>
 </document>
