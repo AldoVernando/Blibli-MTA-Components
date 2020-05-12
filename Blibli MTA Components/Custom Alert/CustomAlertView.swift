@@ -51,11 +51,11 @@ class CustomAlertView: UIView {
         
         switch  type {
         case .success:
-            alertImage.image = UIImage(systemName: "checkmark.circle")
-            alertImage.backgroundColor = #colorLiteral(red: 0.3738499238, green: 0.9821938452, blue: 0.250151446, alpha: 1)
+            alertImage.image = UIImage(systemName: "checkmark.circle.fill")
+            alertImage.tintColor = #colorLiteral(red: 0.6255576611, green: 0.8096942306, blue: 0.3772706985, alpha: 1)
         case .failure:
-            alertImage.image = UIImage(systemName: "xmark.circle")
-            alertImage.backgroundColor = .systemRed
+            alertImage.image = UIImage(systemName: "xmark.circle.fill")
+            alertImage.tintColor = .systemRed
         }
         
         alertTitle.text = title
@@ -67,12 +67,14 @@ class CustomAlertView: UIView {
         
         let textLines: Int = Int(alertMessage.frame.size.height / 20)
         
+        animateIn()
+        
         contentView.frame.size.height = 240 + CGFloat((textLines * 20))
         
         UIApplication.shared.keyWindow?.addSubview(contentView)
         
         contentView.center = parent.view.center
-        animateIn()
+        
     }
     
     func animateIn() {
