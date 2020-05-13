@@ -15,15 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2N-c5-K11">
-                                <rect key="frame" x="-500" y="88" width="250" height="774"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="QsS-Jf-KYd"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ir-H9-lcv">
-                                <rect key="frame" x="50" y="188" width="314" height="30"/>
+                                <rect key="frame" x="50" y="388" width="314" height="30"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Show Modal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,14 +26,11 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Z2N-c5-K11" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9xp-ci-drP"/>
-                            <constraint firstItem="Z2N-c5-K11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-500" id="LTP-wa-r6H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ir-H9-lcv" secondAttribute="trailing" constant="50" id="Sxx-Ls-9p2"/>
                             <constraint firstItem="5ir-H9-lcv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="X7e-rQ-B6B"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z2N-c5-K11" secondAttribute="bottom" id="iGJ-7j-3ma"/>
-                            <constraint firstItem="5ir-H9-lcv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ony-Hn-bZg"/>
+                            <constraint firstItem="5ir-H9-lcv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="ony-Hn-bZg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -58,10 +48,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="hamburgerMenu" destination="Z2N-c5-K11" id="4CK-qs-9Mi"/>
-                        <outlet property="menuConstraint" destination="LTP-wa-r6H" id="Lin-v0-3y0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

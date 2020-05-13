@@ -10,37 +10,48 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var hamburgerMenu: UIView!
-    @IBOutlet weak var menuConstraint: NSLayoutConstraint!
     var menuOpen = false
-    var chips: [String] = []
-    var collectionView: UICollectionView!
-    var selectedChip: IndexPath?
+    var menuConstraint: NSLayoutConstraint!
+    
+    let hamburgerMenu: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView = ChipSlide().collectionView
+        let tabs = TabSlideView()
+        tabs.setData(data: ["General", "News & Updates"])
         
+        let chips = ChipSlideView()
+        chips.setData(data: ["Order", "Product Q & A", "Product"])
+        
+        view.addSubview(chips)
+        view.addSubview(tabs)
+        
+        view.addSubview(hamburgerMenu)
         hamburgerMenu.addSubview(BaseMenuView())
-        hamburgerMenu.translatesAutoresizingMaskIntoConstraints = false
-
-        view.addSubview(collectionView)
         
         NSLayoutConstraint.activate([
             
-            collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
-            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            collectionView.leftAnchor.constraint(equalTo: view.leftAnchor),
-            collectionView.heightAnchor.constraint(equalToConstant: 70)
+            tabs.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tabs.rightAnchor.constraint(equalTo: view.rightAnchor),
+            tabs.leftAnchor.constraint(equalTo: view.leftAnchor),
+            tabs.heightAnchor.constraint(equalToConstant: 60),
+            
+            chips.topAnchor.constraint(equalTo: tabs.bottomAnchor),
+            chips.leftAnchor.constraint(equalTo: view.leftAnchor),
+            chips.rightAnchor.constraint(equalTo: view.rightAnchor),
+            chips.heightAnchor.constraint(equalToConstant: 60),
         ])
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        menuConstraint = NSLayoutConstraint(item: hamburgerMenu, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1, constant: -500)
         
-        collectionView.register(UINib(nibName: "ChipCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "chipCell")
-        chips = ["Order", "Product Q & A", "Product", "User", "Other"]
-        collectionView.reloadData()
+        menuConstraint.isActive = true
+       
     }
 
     @IBAction func menuTapped(_ sender: UIBarButtonItem) {
@@ -67,35 +78,3 @@ class ViewController: UIViewController {
     }
     
 }
-
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return chips.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "chipCell", for: indexPath) as! ChipCollectionViewCell
-        
-        cell.chipLabel.text = chips[indexPath.row]
-        
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as! ChipCollectionViewCell
-        
-        cell.backgroundColor = #colorLiteral(red: 0.1268230677, green: 0.5874770284, blue: 0.8762937188, alpha: 1)
-        cell.chipLabel.textColor = .white
-        
-        if let chip = selectedChip {
-            let selectedCell = collectionView.cellForItem(at: chip) as! ChipCollectionViewCell
-            selectedCell.backgroundColor = .white
-            selectedCell.chipLabel.textColor = #colorLiteral(red: 0.1575623453, green: 0.6193835735, blue: 0.870402813, alpha: 1)
-        }
-        
-        selectedChip = indexPath
-    }
-}
-
