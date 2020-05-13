@@ -23,10 +23,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tabs = TabSlideView()
+        let tabs = TabSlide()
         tabs.setData(data: ["General", "News & Updates"])
         
-        let chips = ChipSlideView()
+        let chips = ChipSlide()
         chips.setData(data: ["Order", "Product Q & A", "Product"])
         
         view.addSubview(chips)

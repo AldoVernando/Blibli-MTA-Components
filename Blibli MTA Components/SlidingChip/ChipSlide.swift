@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChipSlideView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
+class ChipSlide: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
 
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -26,7 +26,7 @@ class ChipSlideView: UIView, UICollectionViewDelegate, UICollectionViewDataSourc
     }()
     
     var selectedChip: IndexPath?
-    var chips: [String] = ["aaa","bbb"]
+    var chips: [String] = []
     
     override init(frame: CGRect) {
         super.init(frame: frame)

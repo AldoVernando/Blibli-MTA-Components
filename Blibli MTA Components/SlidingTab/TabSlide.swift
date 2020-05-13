@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabSlideView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
+class TabSlide: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
 
     let stackView: UIStackView = {
         let stack = UIStackView()
@@ -47,13 +47,14 @@ class TabSlideView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
     
     let inline: UIView = {
         let view = UIView(frame: CGRect(x: 10, y: 0, width: 100, height: 3))
-        view.backgroundColor = #colorLiteral(red: 0.1575623453, green: 0.6193835735, blue: 0.870402813, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.1268230677, green: 0.5874770284, blue: 0.8762937188, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
     }()
     
-    var items: [String] = ["aaa","bbb"]
+    var selectedTab: IndexPath?
+    var items: [String] = []
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -109,6 +110,8 @@ class TabSlideView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
         
         if indexPath.row == 0 {
             inline.frame = CGRect(x: cell.frame.minX, y: 0, width: cell.itemLabel.frame.width + 20, height: 3)
+            cell.itemLabel.textColor = #colorLiteral(red: 0.1268230677, green: 0.5874770284, blue: 0.8762937188, alpha: 1)
+            selectedTab = indexPath
         }
         
         return cell
@@ -118,9 +121,17 @@ class TabSlideView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
         let cell = collectionView.cellForItem(at: indexPath) as! TabItemCollectionViewCell
         
         UIView.animate(withDuration: 0.3) {
+           
+            if let tab = self.selectedTab {
+                let selectedCell = collectionView.cellForItem(at: tab) as! TabItemCollectionViewCell
+                selectedCell.itemLabel.textColor = .black
+            }
+            
+            cell.itemLabel.textColor = #colorLiteral(red: 0.1268230677, green: 0.5874770284, blue: 0.8762937188, alpha: 1)
             self.inline.frame = CGRect(x: cell.frame.minX, y: 0, width: cell.frame.width, height: 3)
         }
         
+        selectedTab = indexPath
     }
     
     

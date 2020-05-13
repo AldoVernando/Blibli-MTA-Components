@@ -18,6 +18,17 @@ class CustomAlertView: UIView {
     @IBOutlet weak var alertMessage: UILabel!
     @IBOutlet weak var alertBtn: UIButton!
     
+    let backgroundView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .gray
+        view.alpha = 0.5
+        view.frame.size.height = UIScreen.main.bounds.height
+        view.frame.size.width = UIScreen.main.bounds.width
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUp()
@@ -70,7 +81,9 @@ class CustomAlertView: UIView {
         animateIn()
         
         contentView.frame.size.height = 240 + CGFloat((textLines * 20))
+        contentView.frame.size.width = UIScreen.main.bounds.width - 30
         
+        UIApplication.shared.keyWindow?.addSubview(backgroundView)
         UIApplication.shared.keyWindow?.addSubview(contentView)
         
         contentView.center = parent.view.center
@@ -93,6 +106,7 @@ class CustomAlertView: UIView {
             self.contentView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
         }) { (_) in
             self.contentView.removeFromSuperview()
+            self.backgroundView.removeFromSuperview()
         }
     }
     

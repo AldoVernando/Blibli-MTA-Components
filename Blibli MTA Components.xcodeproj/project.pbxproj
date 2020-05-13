@@ -31,8 +31,8 @@
 		2472FF2E2468E98A00AE98EF /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2472FF2C2468E98A00AE98EF /* OrderTableViewCell.xib */; };
 		24D35DF4246BA58D004977BB /* TabItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D35DF2246BA58D004977BB /* TabItemCollectionViewCell.swift */; };
 		24D35DF5246BA58D004977BB /* TabItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D35DF3246BA58D004977BB /* TabItemCollectionViewCell.xib */; };
-		24D35DF9246BAC13004977BB /* TabSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D35DF8246BAC13004977BB /* TabSlideView.swift */; };
-		24D35DFB246BAF24004977BB /* ChipSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D35DFA246BAF24004977BB /* ChipSlideView.swift */; };
+		24D35DF9246BAC13004977BB /* TabSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D35DF8246BAC13004977BB /* TabSlide.swift */; };
+		24D35DFB246BAF24004977BB /* ChipSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D35DFA246BAF24004977BB /* ChipSlide.swift */; };
 		24FC4794246505D80017FAEE /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC4792246505D80017FAEE /* BottomViewController.swift */; };
 		24FC4795246505D80017FAEE /* BottomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC4793246505D80017FAEE /* BottomViewController.xib */; };
 		24FC4797246547E30017FAEE /* BottomCardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC4796246547E30017FAEE /* BottomCardModal.swift */; };
@@ -65,8 +65,8 @@
 		2472FF2C2468E98A00AE98EF /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
 		24D35DF2246BA58D004977BB /* TabItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		24D35DF3246BA58D004977BB /* TabItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabItemCollectionViewCell.xib; sourceTree = "<group>"; };
-		24D35DF8246BAC13004977BB /* TabSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSlideView.swift; sourceTree = "<group>"; };
-		24D35DFA246BAF24004977BB /* ChipSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipSlideView.swift; sourceTree = "<group>"; };
+		24D35DF8246BAC13004977BB /* TabSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSlide.swift; sourceTree = "<group>"; };
+		24D35DFA246BAF24004977BB /* ChipSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipSlide.swift; sourceTree = "<group>"; };
 		24FC4792246505D80017FAEE /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
 		24FC4793246505D80017FAEE /* BottomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomViewController.xib; sourceTree = "<group>"; };
 		24FC4796246547E30017FAEE /* BottomCardModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCardModal.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 			children = (
 				2412589F246A53A200DAD6C1 /* ChipCollectionViewCell.swift */,
 				241258A0246A53A200DAD6C1 /* ChipCollectionViewCell.xib */,
-				24D35DFA246BAF24004977BB /* ChipSlideView.swift */,
+				24D35DFA246BAF24004977BB /* ChipSlide.swift */,
 			);
 			path = SlidingChip;
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 			children = (
 				24D35DF2246BA58D004977BB /* TabItemCollectionViewCell.swift */,
 				24D35DF3246BA58D004977BB /* TabItemCollectionViewCell.xib */,
-				24D35DF8246BAC13004977BB /* TabSlideView.swift */,
+				24D35DF8246BAC13004977BB /* TabSlide.swift */,
 			);
 			path = SlidingTab;
 			sourceTree = "<group>";
@@ -289,12 +289,12 @@
 				2405F0EB24622E0F008442A1 /* AppDelegate.swift in Sources */,
 				24D35DF4246BA58D004977BB /* TabItemCollectionViewCell.swift in Sources */,
 				2405F1152462395A008442A1 /* MenuItemTableViewCell.swift in Sources */,
-				24D35DF9246BAC13004977BB /* TabSlideView.swift in Sources */,
+				24D35DF9246BAC13004977BB /* TabSlide.swift in Sources */,
 				241258A1246A53A200DAD6C1 /* ChipCollectionViewCell.swift in Sources */,
 				24FC4797246547E30017FAEE /* BottomCardModal.swift in Sources */,
 				2405F13124627225008442A1 /* MenuItem.swift in Sources */,
 				2405F12C24625D89008442A1 /* MenuContainerView.swift in Sources */,
-				24D35DFB246BAF24004977BB /* ChipSlideView.swift in Sources */,
+				24D35DFB246BAF24004977BB /* ChipSlide.swift in Sources */,
 				2405F0ED24622E0F008442A1 /* SceneDelegate.swift in Sources */,
 				2472FF2D2468E98A00AE98EF /* OrderTableViewCell.swift in Sources */,
 			);
