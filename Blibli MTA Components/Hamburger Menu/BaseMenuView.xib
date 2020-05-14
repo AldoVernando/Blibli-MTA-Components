@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseMenuView" customModule="Blibli_MTA_Components" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="xb1-2M-96r"/>
+                <outlet property="midHeightConstraint" destination="Sdo-Ya-icY" id="607-qT-Lu8"/>
                 <outlet property="midView" destination="xNa-kt-xmY" id="i9s-AW-fjY"/>
                 <outlet property="stackView" destination="sEE-BR-Ayw" id="eTQ-Cn-C6a"/>
             </connections>
@@ -37,21 +38,21 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNa-kt-xmY" customClass="MenuContainerView" customModule="Blibli_MTA_Components" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="81" width="360" height="400"/>
+                            <rect key="frame" x="0.0" y="81" width="360" height="250"/>
                             <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="400" id="Sdo-Ya-icY"/>
+                                <constraint firstAttribute="height" constant="250" id="Sdo-Ya-icY"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bI-zo-IJi" userLabel="Separator">
-                            <rect key="frame" x="0.0" y="481" width="360" height="1"/>
+                            <rect key="frame" x="0.0" y="331" width="360" height="1"/>
                             <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="Ie4-A1-cY3"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYR-2m-MWe" customClass="BottomMenuContainerView" customModule="Blibli_MTA_Components" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="482" width="360" height="290"/>
+                            <rect key="frame" x="0.0" y="332" width="360" height="440"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                     </subviews>

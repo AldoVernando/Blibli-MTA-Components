@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CustomAlertView: UIView {
+class CustomAlert: UIView {
 
-    static let instance = CustomAlertView()
+    static let instance = CustomAlert()
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var alertImage: UIImageView!
@@ -47,26 +47,33 @@ class CustomAlertView: UIView {
         Bundle.main.loadNibNamed("CustomAlertView", owner: self, options: nil)
        
         contentView.layer.cornerRadius = 5
-        alertImage.layer.cornerRadius = alertImage.frame.height / 2
         alertBtn.layer.cornerRadius = 5
     }
 
     
     enum AlertType {
+        case information
+        case alert
         case success
-        case failure
+        case error
     }
     
     
     func showAlert(type: AlertType, title: String, message: String, buttonLabel: String?, parent: UIViewController) {
         
         switch  type {
-        case .success:
-            alertImage.image = UIImage(systemName: "checkmark.circle.fill")
-            alertImage.tintColor = #colorLiteral(red: 0.6255576611, green: 0.8096942306, blue: 0.3772706985, alpha: 1)
-        case .failure:
-            alertImage.image = UIImage(systemName: "xmark.circle.fill")
-            alertImage.tintColor = .systemRed
+            case .information:
+                alertImage.image = UIImage(systemName: "info.circle.fill")
+                alertImage.tintColor = #colorLiteral(red: 0.1268230677, green: 0.5874770284, blue: 0.8762937188, alpha: 1)
+            case .alert:
+                alertImage.image = UIImage(systemName: "exclamationmark.triangle.fill")
+                alertImage.tintColor = #colorLiteral(red: 0.9693801999, green: 0.577829957, blue: 0.1156134978, alpha: 1)
+            case .success:
+                alertImage.image = UIImage(systemName: "checkmark.circle.fill")
+                alertImage.tintColor = #colorLiteral(red: 0.6255576611, green: 0.8096942306, blue: 0.3772706985, alpha: 1)
+            case .error:
+                alertImage.image = UIImage(systemName: "xmark.circle.fill")
+                alertImage.tintColor = .systemRed
         }
         
         alertTitle.text = title
@@ -82,6 +89,7 @@ class CustomAlertView: UIView {
         
         contentView.frame.size.height = 240 + CGFloat((textLines * 20))
         contentView.frame.size.width = UIScreen.main.bounds.width - 30
+        
         
         UIApplication.shared.keyWindow?.addSubview(backgroundView)
         UIApplication.shared.keyWindow?.addSubview(contentView)

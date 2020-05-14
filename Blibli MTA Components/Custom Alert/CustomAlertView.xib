@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertView" customModule="Blibli_MTA_Components" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlert" customModule="Blibli_MTA_Components" customModuleProvider="target">
             <connections>
                 <outlet property="alertBtn" destination="Sw7-19-ve5" id="pL3-z1-Ulz"/>
                 <outlet property="alertImage" destination="5ul-g8-mJw" id="MQG-rv-nRV"/>
@@ -21,8 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="380" height="250"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5ul-g8-mJw">
-                    <rect key="frame" x="20" y="30.5" width="60" height="59"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5ul-g8-mJw">
+                    <rect key="frame" x="20" y="30.5" width="60" height="58"/>
                     <color key="tintColor" red="0.6255576611" green="0.80969423060000001" blue="0.3772706985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="Rnp-6p-sez"/>
@@ -73,6 +73,6 @@
         </view>
     </objects>
     <resources>
-        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="112"/>
     </resources>
 </document>

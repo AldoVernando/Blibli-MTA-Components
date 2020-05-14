@@ -37,8 +37,7 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cube" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zev-FO-1Zz">
                         <rect key="frame" x="332" y="20" width="115" height="115.5"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="115" id="FZ4-YI-lwa"/>
-                            <constraint firstAttribute="width" constant="115" id="zY4-Tm-wNH"/>
+                            <constraint firstAttribute="width" constant="115" id="CIL-F5-8z5"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j7S-tx-CuN">

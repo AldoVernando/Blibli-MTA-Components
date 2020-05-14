@@ -17,7 +17,7 @@ class MenuItem {
     
     init(name: String?, image: UIImage?, destination: UIViewController?) {
         self.name = name ?? ""
-        self.image = image ?? UIImage(systemName: "ant")
+        self.image = image ?? UIImage(systemName: "")
         self.destination = destination ?? UIViewController()
     }
     

@@ -27,7 +27,10 @@ class ProfileView: UIView {
     
     func setUp() {
         Bundle.main.loadNibNamed("ProfileView", owner: self, options: nil)
+        translatesAutoresizingMaskIntoConstraints = false
         addSubview(contentView)
+        
+        
     }
 
 }

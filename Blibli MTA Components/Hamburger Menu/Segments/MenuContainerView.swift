@@ -31,6 +31,7 @@ class MenuContainerView: UIView {
     
     func setUp() {
         Bundle.main.loadNibNamed("MenuContainerView", owner: self, options: nil)
+        translatesAutoresizingMaskIntoConstraints = false
         addSubview(contentView)
         
         tableView.delegate = self

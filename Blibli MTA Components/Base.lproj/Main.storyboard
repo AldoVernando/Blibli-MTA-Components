@@ -25,12 +25,60 @@
                                     <action selector="showModalBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MvI-6n-Ol2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8Z-E4-jpw">
+                                <rect key="frame" x="50" y="108" width="157" height="30"/>
+                                <color key="backgroundColor" red="0.12682306769999999" green="0.58747702840000005" blue="0.87629371879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show Information Alert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoAlertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9dr-MB-7jO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RO-gq-6w9">
+                                <rect key="frame" x="50" y="158" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.96938019990000002" green="0.57782995699999995" blue="0.11561349780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show Alert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlertTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBO-lB-iLu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqB-8i-Aac">
+                                <rect key="frame" x="50" y="208" width="113" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show Error Alert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="errorAlertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJT-pO-LMt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qe-0U-1FC">
+                                <rect key="frame" x="50" y="258" width="137" height="30"/>
+                                <color key="backgroundColor" red="0.6255576611" green="0.80969423060000001" blue="0.3772706985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show Success Alert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="successAlertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNh-up-Hj2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="5qe-0U-1FC" firstAttribute="top" secondItem="YqB-8i-Aac" secondAttribute="bottom" constant="20" id="5wO-9S-sPb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5ir-H9-lcv" secondAttribute="trailing" constant="50" id="Sxx-Ls-9p2"/>
+                            <constraint firstItem="5RO-gq-6w9" firstAttribute="top" secondItem="M8Z-E4-jpw" secondAttribute="bottom" constant="20" id="TxZ-4q-aQl"/>
+                            <constraint firstItem="YqB-8i-Aac" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Whn-Xn-H1Q"/>
                             <constraint firstItem="5ir-H9-lcv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="X7e-rQ-B6B"/>
+                            <constraint firstItem="M8Z-E4-jpw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Zr8-Zc-Elp"/>
+                            <constraint firstItem="5qe-0U-1FC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="bh6-SA-n1F"/>
+                            <constraint firstItem="5RO-gq-6w9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="euC-ww-qB3"/>
+                            <constraint firstItem="YqB-8i-Aac" firstAttribute="top" secondItem="5RO-gq-6w9" secondAttribute="bottom" constant="20" id="fkM-Wj-9iK"/>
                             <constraint firstItem="5ir-H9-lcv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="ony-Hn-bZg"/>
+                            <constraint firstItem="M8Z-E4-jpw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sL9-Iz-0gd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

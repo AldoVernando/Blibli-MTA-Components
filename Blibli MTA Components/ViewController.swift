@@ -13,40 +13,29 @@ class ViewController: UIViewController {
     var menuOpen = false
     var menuConstraint: NSLayoutConstraint!
     
-    let hamburgerMenu: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        return view
-    }()
+//    let hamburgerMenu: UIView = {
+//        let view = UIView()
+//        view.autoresizesSubviews = true
+//        view.translatesAutoresizingMaskIntoConstraints = false
+//
+//        return view
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tabs = TabSlide()
-        tabs.setData(data: ["General", "News & Updates"])
         
-        let chips = ChipSlide()
-        chips.setData(data: ["Order", "Product Q & A", "Product"])
-        
-        view.addSubview(chips)
-        view.addSubview(tabs)
+        let hamburgerMenu = BaseMenuView()
         
         view.addSubview(hamburgerMenu)
-        hamburgerMenu.addSubview(BaseMenuView())
+//        hamburgerMenu.addSubview(baseMenu)
         
         NSLayoutConstraint.activate([
             
-            tabs.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            tabs.rightAnchor.constraint(equalTo: view.rightAnchor),
-            tabs.leftAnchor.constraint(equalTo: view.leftAnchor),
-            tabs.heightAnchor.constraint(equalToConstant: 60),
-            
-            chips.topAnchor.constraint(equalTo: tabs.bottomAnchor),
-            chips.leftAnchor.constraint(equalTo: view.leftAnchor),
-            chips.rightAnchor.constraint(equalTo: view.rightAnchor),
-            chips.heightAnchor.constraint(equalToConstant: 60),
+            hamburgerMenu.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            hamburgerMenu.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
+        
         
         menuConstraint = NSLayoutConstraint(item: hamburgerMenu, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1, constant: -500)
         
@@ -70,11 +59,31 @@ class ViewController: UIViewController {
     }
     
     @IBAction func alertTapped(_ sender: Any) {
-        CustomAlertView.instance.showAlert(type: .success, title: "Success change password", message: "Your password for this account already changed", buttonLabel: "Okay, got it", parent: self)
+        navigationController?.pushViewController(NotificationViewController(), animated: true)
     }
     
     @IBAction func showModalBtnTapped(_ sender: UIButton) {
         BottomCardModal.instance.show(owner: self)
     }
+    
+    
+    
+    @IBAction func infoAlertTapped(_ sender: UIButton) {
+        CustomAlert.instance.showAlert(type: .information, title: "Information", message: "Your password for this account already changed", buttonLabel: "Okay, got it", parent: self)
+    }
+    
+    @IBAction func showAlertTaped(_ sender: UIButton) {
+        CustomAlert.instance.showAlert(type: .alert, title: "Alert", message: "Your password for this account already changed", buttonLabel: "Okay, got it", parent: self)
+    }
+    
+    @IBAction func errorAlertTapped(_ sender: UIButton) {
+        CustomAlert.instance.showAlert(type: .error, title: "Error", message: "Your password for this account already changed", buttonLabel: "Okay, got it", parent: self)
+    }
+    
+    @IBAction func successAlertTapped(_ sender: UIButton) {
+        CustomAlert.instance.showAlert(type: .success, title: "Success change password", message: "Your password for this account already changed", buttonLabel: "Okay, got it", parent: self)
+    }
+    
+    
     
 }

@@ -24,7 +24,8 @@
 		2405F12E24626A88008442A1 /* BottomMenuContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F12D24626A88008442A1 /* BottomMenuContainerView.swift */; };
 		2405F13124627225008442A1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F13024627225008442A1 /* MenuItem.swift */; };
 		2405F1342462A575008442A1 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2405F1332462A575008442A1 /* CustomAlertView.xib */; };
-		2405F1362462AAD9008442A1 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F1352462AAD9008442A1 /* CustomAlertView.swift */; };
+		2405F1362462AAD9008442A1 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405F1352462AAD9008442A1 /* CustomAlert.swift */; };
+		24095D7B246D012000A6ED65 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24095D7A246D012000A6ED65 /* NotificationViewController.swift */; };
 		241258A1246A53A200DAD6C1 /* ChipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412589F246A53A200DAD6C1 /* ChipCollectionViewCell.swift */; };
 		241258A2246A53A200DAD6C1 /* ChipCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241258A0246A53A200DAD6C1 /* ChipCollectionViewCell.xib */; };
 		2472FF2D2468E98A00AE98EF /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2472FF2B2468E98A00AE98EF /* OrderTableViewCell.swift */; };
@@ -58,7 +59,8 @@
 		2405F12D24626A88008442A1 /* BottomMenuContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuContainerView.swift; sourceTree = "<group>"; };
 		2405F13024627225008442A1 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		2405F1332462A575008442A1 /* CustomAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
-		2405F1352462AAD9008442A1 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		2405F1352462AAD9008442A1 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		24095D7A246D012000A6ED65 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		2412589F246A53A200DAD6C1 /* ChipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipCollectionViewCell.swift; sourceTree = "<group>"; };
 		241258A0246A53A200DAD6C1 /* ChipCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChipCollectionViewCell.xib; sourceTree = "<group>"; };
 		2472FF2B2468E98A00AE98EF /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				2405F0EA24622E0F008442A1 /* AppDelegate.swift */,
 				2405F0EC24622E0F008442A1 /* SceneDelegate.swift */,
 				2405F0EE24622E0F008442A1 /* ViewController.swift */,
+				24095D7A246D012000A6ED65 /* NotificationViewController.swift */,
 				2405F0F024622E0F008442A1 /* Main.storyboard */,
 				2405F0F324622E12008442A1 /* Assets.xcassets */,
 				2405F0F524622E12008442A1 /* LaunchScreen.storyboard */,
@@ -156,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				2405F1332462A575008442A1 /* CustomAlertView.xib */,
-				2405F1352462AAD9008442A1 /* CustomAlertView.swift */,
+				2405F1352462AAD9008442A1 /* CustomAlert.swift */,
 			);
 			path = "Custom Alert";
 			sourceTree = "<group>";
@@ -280,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2405F1362462AAD9008442A1 /* CustomAlertView.swift in Sources */,
+				2405F1362462AAD9008442A1 /* CustomAlert.swift in Sources */,
 				2405F12E24626A88008442A1 /* BottomMenuContainerView.swift in Sources */,
 				2405F12824625A91008442A1 /* ProfileView.swift in Sources */,
 				2405F12424624EFC008442A1 /* BaseMenuView.swift in Sources */,
@@ -294,6 +297,7 @@
 				24FC4797246547E30017FAEE /* BottomCardModal.swift in Sources */,
 				2405F13124627225008442A1 /* MenuItem.swift in Sources */,
 				2405F12C24625D89008442A1 /* MenuContainerView.swift in Sources */,
+				24095D7B246D012000A6ED65 /* NotificationViewController.swift in Sources */,
 				24D35DFB246BAF24004977BB /* ChipSlide.swift in Sources */,
 				2405F0ED24622E0F008442A1 /* SceneDelegate.swift in Sources */,
 				2472FF2D2468E98A00AE98EF /* OrderTableViewCell.swift in Sources */,
