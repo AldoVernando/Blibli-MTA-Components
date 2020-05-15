@@ -12,9 +12,9 @@ class BottomViewController: UIViewController {
 
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var dimmer: UIView!
-    @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var cardViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var handleView: UIView!
+    @IBOutlet weak var cardView: UIView!
     
     var backgroundImage: UIImage?
 
@@ -33,7 +33,6 @@ class BottomViewController: UIViewController {
         handleView.clipsToBounds = true
         handleView.layer.cornerRadius = 3
         
-        cardView.clipsToBounds = true
         cardView.layer.cornerRadius = 10
         cardView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
@@ -102,9 +101,24 @@ class BottomViewController: UIViewController {
     @objc func dimmerViewTapped(_ tapRecognizer: UITapGestureRecognizer) {
         hideCardAndGoBack()
     }
-
     
-    private func showCard(atState: CardViewState = .normal) {
+    
+    func setCardView(view: UIView) {
+        
+        
+        cardView.addSubview(view)
+        
+        NSLayoutConstraint.activate([
+        
+            view.topAnchor.constraint(equalTo: cardView.topAnchor),
+            view.leftAnchor.constraint(equalTo: cardView.leftAnchor),
+            view.rightAnchor.constraint(equalTo: cardView.rightAnchor, constant: -290),
+            view.bottomAnchor.constraint(equalTo: cardView.bottomAnchor)
+        ])
+        
+    }
+    
+    func showCard(atState: CardViewState = .normal) {
        
         self.view.layoutIfNeeded()
       
@@ -130,7 +144,7 @@ class BottomViewController: UIViewController {
     }
 
     
-    private func hideCardAndGoBack() {
+    func hideCardAndGoBack() {
         
         self.view.layoutIfNeeded()
       

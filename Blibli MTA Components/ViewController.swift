@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showModalBtnTapped(_ sender: UIButton) {
-        BottomCardModal.instance.show(owner: self)
+        BottomCardModal.instance.show(owner: self, view: SearchBarView())
     }
     
     

@@ -10,7 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomViewController" customModule="Blibli_MTA_Components" customModuleProvider="target">
             <connections>
                 <outlet property="background" destination="NsY-5F-ad0" id="XPY-WN-RAW"/>
-                <outlet property="cardView" destination="5lu-Fv-iP6" id="x8e-sm-YTF"/>
+                <outlet property="cardView" destination="5lu-Fv-iP6" id="AH2-gW-dNy"/>
                 <outlet property="cardViewTopConstraint" destination="j1F-UV-u2f" id="ZA5-zg-7tG"/>
                 <outlet property="dimmer" destination="PN2-Vu-UiJ" id="2ez-Tq-Hj3"/>
                 <outlet property="handleView" destination="Kii-rd-rHP" id="PBO-h5-bSk"/>

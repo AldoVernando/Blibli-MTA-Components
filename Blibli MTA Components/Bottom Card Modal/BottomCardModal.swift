@@ -13,7 +13,7 @@ class BottomCardModal {
     
     static let instance = BottomCardModal()
     
-    func show(owner: UIViewController) {
+    func show(owner: UIViewController, view: UIView?) {
         let vc = BottomViewController()
         
         let renderer = UIGraphicsImageRenderer(size: owner.view.bounds.size)
@@ -25,6 +25,10 @@ class BottomCardModal {
         vc.modalPresentationStyle = .fullScreen
         
         owner.present(vc, animated: false, completion: nil)
+        
+        if let getView = view {
+            vc.setCardView(view: getView)
+        }
     }
     
 }
