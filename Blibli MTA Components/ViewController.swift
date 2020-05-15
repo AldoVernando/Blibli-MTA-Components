@@ -13,24 +13,21 @@ class ViewController: UIViewController {
     var menuOpen = false
     var menuConstraint: NSLayoutConstraint!
     
-//    let hamburgerMenu: UIView = {
-//        let view = UIView()
-//        view.autoresizesSubviews = true
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//
-//        return view
-//    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let hamburgerMenu = BaseMenuView()
+        let blueLabel = BlibliLabel()
         
+        view.addSubview(blueLabel)
         view.addSubview(hamburgerMenu)
-//        hamburgerMenu.addSubview(baseMenu)
+        
         
         NSLayoutConstraint.activate([
+            
+            blueLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 600),
+            blueLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
+            blueLabel.widthAnchor.constraint(equalToConstant: 80),
             
             hamburgerMenu.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             hamburgerMenu.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
@@ -40,7 +37,6 @@ class ViewController: UIViewController {
         menuConstraint = NSLayoutConstraint(item: hamburgerMenu, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1, constant: -500)
         
         menuConstraint.isActive = true
-       
     }
 
     @IBAction func menuTapped(_ sender: UIBarButtonItem) {

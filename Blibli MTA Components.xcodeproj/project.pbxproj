@@ -32,6 +32,7 @@
 		241258A2246A53A200DAD6C1 /* ChipCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241258A0246A53A200DAD6C1 /* ChipCollectionViewCell.xib */; };
 		2472FF2D2468E98A00AE98EF /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2472FF2B2468E98A00AE98EF /* OrderTableViewCell.swift */; };
 		2472FF2E2468E98A00AE98EF /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2472FF2C2468E98A00AE98EF /* OrderTableViewCell.xib */; };
+		24BBD0CD246E7764000BFFAB /* BlibliLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BBD0CC246E7764000BFFAB /* BlibliLabel.swift */; };
 		24D35DF4246BA58D004977BB /* TabItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D35DF2246BA58D004977BB /* TabItemCollectionViewCell.swift */; };
 		24D35DF5246BA58D004977BB /* TabItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D35DF3246BA58D004977BB /* TabItemCollectionViewCell.xib */; };
 		24D35DF9246BAC13004977BB /* TabSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D35DF8246BAC13004977BB /* TabSlide.swift */; };
@@ -71,6 +72,7 @@
 		241258A0246A53A200DAD6C1 /* ChipCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChipCollectionViewCell.xib; sourceTree = "<group>"; };
 		2472FF2B2468E98A00AE98EF /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		2472FF2C2468E98A00AE98EF /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		24BBD0CC246E7764000BFFAB /* BlibliLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlibliLabel.swift; sourceTree = "<group>"; };
 		24D35DF2246BA58D004977BB /* TabItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		24D35DF3246BA58D004977BB /* TabItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		24D35DF8246BAC13004977BB /* TabSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSlide.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		2405F0E924622E0F008442A1 /* Blibli MTA Components */ = {
 			isa = PBXGroup;
 			children = (
+				24BBD0C9246E768B000BFFAB /* Label */,
 				24095D7C246D3EDE00A6ED65 /* Search Bar */,
 				24D35DF1246BA394004977BB /* Sliding Tab */,
 				2412589E246A534100DAD6C1 /* Sliding Chip */,
@@ -200,6 +203,14 @@
 				2472FF2C2468E98A00AE98EF /* OrderTableViewCell.xib */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		24BBD0C9246E768B000BFFAB /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				24BBD0CC246E7764000BFFAB /* BlibliLabel.swift */,
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 		24D35DF1246BA394004977BB /* Sliding Tab */ = {
@@ -333,6 +344,7 @@
 				2405F0ED24622E0F008442A1 /* SceneDelegate.swift in Sources */,
 				24DB4FFD246E50630061E127 /* SellerTableViewCell.swift in Sources */,
 				2472FF2D2468E98A00AE98EF /* OrderTableViewCell.swift in Sources */,
+				24BBD0CD246E7764000BFFAB /* BlibliLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
