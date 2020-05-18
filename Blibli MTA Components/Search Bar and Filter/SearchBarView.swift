@@ -84,12 +84,16 @@ extension SearchBarView: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         
-        let keyWord = textField.text
+        let keyWord: String = textField.text ?? ""
         
-        let filtered = sellers.filter { $0.contains(Character(keyWord!))}
-        
-        filterSeller = filtered
-        
+        if keyWord != "" {
+            let filtered = sellers.filter { $0.lowercased().contains(keyWord)}
+            filterSeller = filtered
+        }
+        else {
+            filterSeller = sellers
+        }
+                
         tableView.reloadData()
     }
     
@@ -98,3 +102,5 @@ extension SearchBarView: UITextFieldDelegate {
         return true
     }
 }
+
+
