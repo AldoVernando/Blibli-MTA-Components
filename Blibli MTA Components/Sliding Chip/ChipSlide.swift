@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChipSlide: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
+class ChipSlide: UIView {
 
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -64,6 +64,12 @@ class ChipSlide: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
            
            collectionView.reloadData()
     }
+
+}
+
+
+// MARK: UICollectionView
+extension ChipSlide: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return chips.count
@@ -88,5 +94,5 @@ class ChipSlide: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
         
         selectedChip = indexPath
     }
-
+    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabSlide: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
+class TabSlide: UIView {
 
     let stackView: UIStackView = {
         let stack = UIStackView()
@@ -98,6 +98,11 @@ class TabSlide: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
         collectionView.reloadData()
     }
     
+}
+
+
+// MARK: UICollectionView
+extension TabSlide: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
@@ -133,7 +138,5 @@ class TabSlide: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
         
         selectedTab = indexPath
     }
-    
-    
     
 }

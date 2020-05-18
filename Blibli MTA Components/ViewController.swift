@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         view.addSubview(blueLabel)
         view.addSubview(hamburgerMenu)
         
-        
         NSLayoutConstraint.activate([
             
             blueLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 600),
