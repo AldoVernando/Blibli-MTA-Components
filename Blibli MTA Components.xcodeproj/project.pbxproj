@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				24BBD0C9246E768B000BFFAB /* Label */,
-				24095D7C246D3EDE00A6ED65 /* Search Bar */,
+				24095D7C246D3EDE00A6ED65 /* Search Bar and Filter */,
 				24D35DF1246BA394004977BB /* Sliding Tab */,
 				2412589E246A534100DAD6C1 /* Sliding Chip */,
 				2472FF2A2468E87000AE98EF /* Notification */,
@@ -176,14 +176,14 @@
 			path = "Custom Alert";
 			sourceTree = "<group>";
 		};
-		24095D7C246D3EDE00A6ED65 /* Search Bar */ = {
+		24095D7C246D3EDE00A6ED65 /* Search Bar and Filter */ = {
 			isa = PBXGroup;
 			children = (
 				24DB4FFA246E502B0061E127 /* Item Cell */,
 				24095D7D246D3F2700A6ED65 /* SearchBarView.xib */,
 				24095D7F246D401400A6ED65 /* SearchBarView.swift */,
 			);
-			path = "Search Bar";
+			path = "Search Bar and Filter";
 			sourceTree = "<group>";
 		};
 		2412589E246A534100DAD6C1 /* Sliding Chip */ = {

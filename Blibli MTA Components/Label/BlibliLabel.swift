@@ -15,7 +15,6 @@ class BlibliLabel: UIView {
         label.textColor = .white
         label.textAlignment = .center
         label.text = "label"
-        label.textRect(forBounds: CGRect(x: 0, y: 0, width: 100, height: 30), limitedToNumberOfLines: 1)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
